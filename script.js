@@ -1,31 +1,31 @@
 
 // Hamburger Project
 
-// var projects, item;
+var projects, item;
 
 
-// projects = ['Project 1', 'Project 2', 'Project 3', 'Project 4'];
+projects = ['Project 1', 'Project 2', 'Project 3', 'Project 4'];
 
 
-// document.getElementById('open').addEventListener('click', (event) => {
-//   let element_list1 = document.getElementById('list1');
-//   element_list1.replaceChildren();
-//   projects.forEach((item) => {
-//     let element_list12 = document.getElementById('list1');
-//     let new_li = document.createElement('li');
-//     new_li.innerText = item;
+document.getElementById('open').addEventListener('click', (event) => {
+  let element_list1 = document.getElementById('list1');
+  element_list1.replaceChildren();
+  projects.forEach((item) => {
+    let element_list12 = document.getElementById('list1');
+    let new_li = document.createElement('li');
+    new_li.innerText = item;
 
-//     element_list12.appendChild(new_li);
-//   });
-//   let element_open = document.getElementById('open');
-//   element_open.innerText = 'X';
+    element_list12.appendChild(new_li);
+  });
+  let element_open = document.getElementById('open');
+  element_open.innerText = 'X';
 
-//   element_open.addEventListener('click', (event) => {
-//     let element_list13 = document.getElementById('list1');
-//     element_list13.replaceChildren();
+  element_open.addEventListener('click', (event) => {
+    let element_list13 = document.getElementById('list1');
+    element_list13.replaceChildren();
 
-//   });
-// });
+  });
+});
 
 
 
